@@ -3,8 +3,7 @@ from . import views
 
 
 urlpatterns = [
-    url(r'^$', views.post_list name='post_list'),
-    url(r'^/$', views.post_list, name="post_list"),
+    url(r'^$', views.post_list, name='blog'),
     url(r'^(?P<id>\d+)/$', views.post_detail),
     url(r'^top', views.top_five),
     url(r'^post/new/$', views.new_post, name='new_post'),
